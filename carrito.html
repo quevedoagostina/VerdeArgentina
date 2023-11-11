@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - Verde Argentina</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1A2E05;">
+    <a href="index.html" class="navbar-brand">
+      <img src="images/logo.png" alt="Logo de Verde Argentina" style="max-height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="plantas.html">Plantas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="flores.html">Flores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="insumos.html">Insumos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="herramientas.html">Herramientas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex ms-auto">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><img src="images/busqueda.png" alt="Icono de búsqueda"></button>
+      </form>
+      <div class="cart-icon" style="max-height: 20px;">
+        <a href="carrito.html">
+          <img src="images/carrito.png" alt="Icono de carrito de compras" style="max-height: 50px;">
+        </a>
+      </div>
+      <div class="profile-icon">
+        <a href="perfil.html">
+          <img src="images/perfil.png" alt="Icono de perfil" style="max-height: 50px;">
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <section class="container mt-5">
+    <h1>Carrito de Compras</h1>
+  
+    <div class="row">
+      <div class="col-md-8">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Total</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Nombre del Producto</td>
+              <td>$20.00</td>
+              <td>
+                <input type="number" value="1" min="1">
+              </td>
+              <td>$20.00</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+              </td>
+            </tr>
+            <!-- Agrega más filas según sea necesario para cada producto en el carrito -->
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Resumen del Pedido</h5>
+            <p class="card-text">Subtotal: $20.00</p>
+            <p class="card-text">Envío: $5.00</p>
+            <h4 class="card-text">Total: $25.00</h4>
+            <button type="button" class="btn btn-success">Realizar Pago</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>

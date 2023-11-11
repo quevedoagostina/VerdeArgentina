@@ -42,25 +42,40 @@
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-success" type="submit"><img src="images/busqueda.png" alt="Icono de búsqueda"></button>
       </form>
-      <div class="profile-icon" style="max-height: 20px;">
-        <img src="images/perfil.png" alt="Icono de perfil" style="max-height: 50px;">
+      <div class="cart-icon" style="max-height: 20px;">
+        <a href="carrito.html">
+          <img src="images/carrito.png" alt="Icono de carrito de compras" style="max-height: 50px;">
+        </a>
+      </div>
+      <div class="profile-icon">
+        <a href="perfil.html">
+          <img src="images/perfil.png" alt="Icono de perfil" style="max-height: 50px;">
+        </a>
       </div>
     </div>
   </nav>
+  
 
-<section class="hero container">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h1>Verde Argentina</h1>
-      <p>Tu vivero de confianza para plantas y flores en Argentina</p>
+  <section class="hero container rounded">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <!-- Elimina el texto y agrega la imagen -->
+        <img src="images/logo2.png" class="logo-img" alt="Logo de Verde Argentina" style="max-width: 100%;">
+        <p>Tu vivero de confianza para plantas y flores en Argentina</p>
+      </div>      
+      <div class="col-md-6">
+        <div class="hero-image-container position-relative overflow-hidden">
+          <img src="images/planta.jpg" alt="Planta" class="img-fluid rounded-circle hero-image">
+          <div class="overlay"></div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <img src="images/planta.jpg" alt="Planta" class="img-fluid">
-    </div>
-  </div>
-</section>
+  </section>  
 
-<section class="categories container">
+  <section class="categories container mt-5 p-4  rounded">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="mb-4 text-dark">Categorías</h2>
   <div class="row">
     <div class="col-md-3">
       <div class="category text-center">
@@ -98,4 +113,36 @@
 </section>
 
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const heroTitle = document.querySelector(".hero-title");
+    const heroImage = document.querySelector(".hero-image");
+
+    heroTitle.addEventListener("mouseover", function () {
+      // Cambiar el color del título
+      this.style.color = "#4caf50";
+      // Agregar la planta al cuerpo del documento
+      document.body.appendChild(planta);
+    });
+
+    heroTitle.addEventListener("mouseout", function () {
+      // Restaurar el color original del título
+      this.style.color = "#000";
+    });
+
+    heroImage.addEventListener("mouseover", function () {
+      // Aplicar la animación deseada al pasar el mouse sobre la imagen
+      // Por ejemplo, puedes cambiar el fondo o la opacidad
+      this.style.backgroundColor = "#4caf50";
+      this.style.transition = "background-color 0.5s ease-in-out";
+    });
+
+    heroImage.addEventListener("mouseout", function () {
+      // Restaurar el estado original al quitar el mouse
+      this.style.backgroundColor = "transparent";
+      this.style.transition = "background-color 0.5s ease-in-out";
+    });
+  });
+</script>
+
 </html>

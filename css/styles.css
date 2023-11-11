@@ -8,8 +8,9 @@
   /* Estilos para el cuerpo de la página */
   body {
     font-family: "Raleway", Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #797979;
   }
+
   
   .navbar {
     background-color: #1a2e05;
@@ -88,58 +89,55 @@
 
   }
   
+  .cart-icon {
+    margin-left: 60px; /* Ajusta el margen según sea necesario */
+    padding-bottom: 50px;
+  }
+  
+  .cart-icon img {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+  }
   
   /* Estilos para el ícono de perfil */
   .profile-icon img {
-    width: 40px;
-    height: 40px;
+    margin-left: 40px;
+
   }
   
-  /* Otros estilos que ya tienes en tu CSS */
-  /* ... (los estilos que proporcionaste anteriormente) ... */
-  
-  
-
+/* Estilos para la sección del héroe */
 .hero {
-    background-color: white; /* Cambia a un fondo blanco para la imagen */
-    height: auto; /* Elimina la altura fija para permitir que el contenido determine la altura */
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-  
-.hero img {
-    max-width: 100%; /* Cambia el tamaño de la imagen a un máximo del 50% del ancho */
-    float: right; /* Alinea la imagen a la derecha */
-    margin-left: 20px; /* Añade un margen izquierdo para separar el contenido */
-  }
-  
-  hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 50%;
-  }
+  padding: 80px 0; /* Ajusta el espaciado según tus necesidades */
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
+.hero-image {
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+}
+/* Estilo inicial del título */
+.hero-title {
+  color: #000; /* Color inicial del texto */
+  transition: color 0.5s ease-in-out; /* Transición suave para el color */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Estilo del título cuando se pasa el mouse sobre él */
+.hero-title:hover {
+  color: #4caf50; /* Cambia el color al pasar el mouse */
+}
+
+
+
   .container {
     padding-top: 20px;
     padding-bottom: 20px;
   }
   
-  body {
-    background-color: #111845;
-  }
   
   .image-container {
     height: 400px;
     width: 533px;
     background-repeat: no-repeat;
     margin: 5% auto;
-    border-radius: 10px;
+    border-radius:70px;
     position: relative;
   }
   
@@ -156,22 +154,75 @@
   .hero p {
     font-size: 18px;
   }
-  
-  /* Estilos para las categorías */
+
+
   .categories {
-    display: flex;
-    justify-content: space-around;
+    background-color: #64a30d5a; /* Fondo verde claro para el contenedor de categorías */
+    border: 1px solid #0b1c0f; /* Borde del contenedor */
+    border-radius: 40px; /* Bordes redondeados del contenedor */
+    margin-top: 20px; /* Margen superior para separar del contenido anterior */
+    padding: 20px; /* Espaciado interno del contenedor */
+  }
+
+  .categories h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del texto */
+    margin-bottom: 15px; /* Margen inferior para separar del contenido siguiente */
+  }
+
+  .profile-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px #000000;
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  .profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .profile-section {
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #d1d1d1;
     padding: 20px;
-    background-color: #f7f7f7;
+    margin-bottom: 20px;
+  }
+
+  .profile-section h2 {
+    color: #495057;
+  }
+
+  .profile-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .profile-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .profile-section img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .profile-section img:hover {
+    transform: scale(1.1);
   }
   
 /* Estilos para las categorías */
 .category {
     text-align: center;
     cursor: pointer;
+    background-color: #4d7c0f;
     transition: background-color 0.5s, transform 0.2s;
     display: inline-block;
     padding: 10px 20px;
+    border-radius: 30px;
     border: 2px solid #252525; /* Color de borde inicial */
     color: #252525; /* Color del texto inicial */
     text-decoration: none; /* Elimina el subrayado */
